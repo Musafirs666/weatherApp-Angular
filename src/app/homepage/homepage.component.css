@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+  .lastDiv {
+    width: 100%;
+  }
+  .noScroll{
+    overflow: hidden;
+  }
+}

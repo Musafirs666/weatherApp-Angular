@@ -1,0 +1,14 @@
+::-webkit-scrollbar {
+    width: 5px; /* Lebar scrollbar */
+}
+
+/* Memodifikasi thumb atau bagian yang dapat digerakkan */
+::-webkit-scrollbar-thumb {
+    background: #202b3b; /* Warna background thumb */
+    border-radius: 5px; /* Bentuk radius thumb */
+}
+
+/* Mengatur warna pada hover thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #858b94; /* Warna background thumb saat dihover */
+}

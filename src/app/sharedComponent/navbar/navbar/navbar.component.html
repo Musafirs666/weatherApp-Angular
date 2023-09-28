@@ -1,0 +1,85 @@
+<div class="min-w-[5rem] h-full bg-[#202b3b] rounded-xl flex-col gap-5 hidden lg:flex pt-10 p-2">
+    <div class="w-full flex justify-center items-center mb-10">
+      <img src="../../assets/img/umbrella.png" class="w-7 h-7" />
+    </div>
+    <div class="w-full flex flex-col justify-center items-center gap-1 cursor-pointer" (click)="onHomeClick()">
+      <img [class]="currentUrl === 'home' ? 'brightness-200' : ''" src="../../assets/img/weather.png" class="w-6 h-6" />
+      <h2 [class]="
+          currentUrl === 'home' ? 'text-white font-bold text-sm' : 'text-sm'
+        " class="text-[#858b94]">
+        wheather
+      </h2>
+    </div>
+    <div class="w-full flex flex-col justify-center items-center gap-1 cursor-pointer" (click)="onCitiesClick()">
+      <img [class]="currentUrl === 'cities' ? 'brightness-200' : ''" src="../../assets/img/road-map.png"
+        class="w-6 h-6" />
+      <h2 [class]="
+          currentUrl === 'cities' ? 'text-white font-bold text-sm' : 'text-sm'
+        " class="text-[#858b94]">
+        cities
+      </h2>
+    </div>
+    <div class="w-full flex flex-col justify-center items-center gap-1 cursor-pointer" (click)="onMapClick()">
+      <img [class]="currentUrl === 'map' ? 'brightness-200' : ''" src="../../assets/img/map.png" class="w-6 h-6" />
+      <h2 [class]="
+          currentUrl === 'map' ? 'text-white font-bold text-sm' : 'text-sm'
+        " class="text-[#858b94]">
+        map
+      </h2>
+    </div>
+    <div class="w-full flex flex-col justify-center items-center gap-1 cursor-pointer" (click)="onSettingClick()">
+      <img [class]="currentUrl === 'setting' ? 'brightness-200' : ''" src="../../assets/img/settings.png"
+        class="w-6 h-6" />
+      <h2 [class]="
+          currentUrl === 'setting' ? 'text-white font-bold text-sm' : 'text-sm'
+        " class="text-[#858b94]">
+        settings
+      </h2>
+    </div>
+  </div>
+
+  <div *ngIf="isLargeScreen" class="w-fit h-full absolute pl-10 pt-5 pb-5 flex flex-col gap-9 lg:hidden">
+    <div class="w-full flex mb-5 gap-8">
+      <img src="../../assets/img/umbrella.png" class="w-7 h-7" />
+      <h2 class="text-white font-bold text-lg">
+        Climate
+      </h2>
+    </div>
+    <div class="w-full flex gap-3 cursor-pointer items-center" (click)="onHomeClick()">
+      <img [class]="currentUrl === 'home' ? 'brightness-200' : ''" src="../../assets/img/weather.png" class="w-6 h-6" />
+      <h2 [class]="
+          currentUrl === 'home' ? 'text-white font-bold text-sm' : 'text-sm'
+        " class="text-[#858b94]">
+        wheather
+      </h2>
+    </div>
+    <div class="w-full flex gap-3 cursor-pointer items-center" (click)="onCitiesClick()">
+      <img [class]="currentUrl === 'cities' ? 'brightness-200' : ''" src="../../assets/img/road-map.png"
+        class="w-6 h-6" />
+      <h2 [class]="
+          currentUrl === 'cities' ? 'text-white font-bold text-sm' : 'text-sm'
+        " class="text-[#858b94]">
+        cities
+      </h2>
+    </div>
+    <div class="w-full flex gap-3 cursor-pointer items-center" (click)="onMapClick()">
+      <img [class]="currentUrl === 'map' ? 'brightness-200' : ''" src="../../assets/img/map.png" class="w-6 h-6" />
+      <h2 [class]="
+          currentUrl === 'map' ? 'text-white font-bold text-sm' : 'text-sm'
+        " class="text-[#858b94]">
+        map
+      </h2>
+    </div>
+    <div class="w-full flex gap-3 cursor-pointer items-center" (click)="onSettingClick()">
+      <img [class]="currentUrl === 'setting' ? 'brightness-200' : ''" src="../../assets/img/settings.png"
+        class="w-6 h-6" />
+      <h2 [class]="
+          currentUrl === 'setting' ? 'text-white font-bold text-sm' : 'text-sm'
+        " class="text-[#858b94]">
+        settings
+      </h2>
+    </div>
+    <h2 class="text-[#858b94] font-bold text-sm mt-auto -ml-5">
+      by @_musafirs - api: BMKG
+    </h2>
+  </div>
